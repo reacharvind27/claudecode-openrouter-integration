@@ -57,7 +57,7 @@ this is required and claude will ask on the first time launch
 ### Steps
 
 1. Prepare the Claude Setting File
-   - File to be placed in ""c:/user/<user-name>/.claude"
+   - File to be placed in ""c:/user/$$$user-name$$$/.claude"
    - File Name = settings.json
    - File Content = see the text below
   
@@ -81,7 +81,7 @@ this is required and claude will ask on the first time launch
      -  select the 2nd option 
      -  wait for the authentication to comple
      -  exit the claude tool and the command propmpt
-3. goto "c:/users/<user-name>/.claude
+3. goto "c:/users/$$$$user-name$$$/.claude
 4. paste the settings.json file
 4. Open the new terminal
 5. enter claude
