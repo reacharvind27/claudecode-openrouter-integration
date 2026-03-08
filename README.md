@@ -114,6 +114,6 @@ npm install -g @anthropic-ai/claude-code@latest
 
 5. Test If API Key Works (Important)
 
-curl https://openrouter.ai/api/v1/models -H "Authorization: Bearer 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"
+curl https://openrouter.ai/api/v1/models -H "Authorization: Bearer sk-or-v1-***************"
 
 
