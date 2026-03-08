@@ -18,7 +18,7 @@ Use this repo to run Claude Code completely for free using OpenRouter
 1. Install Claude Code, use the below link to install the software
 
 ```
-[Claude Installation Link](https://code.claude.com/docs/en/quickstart#native-install-recommended)
+https://code.claude.com/docs/en/quickstart#native-install-recommended
 ```
 2. Upgrade the claude code
    
