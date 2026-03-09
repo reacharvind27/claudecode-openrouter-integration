@@ -145,6 +145,7 @@ Verify installation:
 claude --version
 ```
 
+
 ---
 
 # Step 2 — Create an OpenRouter Account
@@ -167,43 +168,31 @@ https://openrouter.ai
 
 Claude Code must be configured to use OpenRouter instead of Anthropic.
 
-Add the following variables to your shell configuration file.
+Add the following variables to your shell configuration file or Claude "settings.json" file.
 
-Example files:
-
-```
-~/.bashrc
-~/.zshrc
-~/.profile
-```
-
-Add the following:
+I have updated the Claude "settings.json" file for my demo
 
 ```bash
 export OPENROUTER_API_KEY="your-api-key"
-
 export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
-
 export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
-
 export ANTHROPIC_API_KEY=""
+```
+
+```
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+    "ANTHROPIC_AUTH_TOKEN": "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",
+    "ANTHROPIC_API_KEY": "",
+    "ANTHROPIC_MODEL" : "openrouter/free"     
+  }
+}
 ```
 
 Important:
 
 `ANTHROPIC_API_KEY` must be set to an **empty string** so Claude Code does not attempt to authenticate directly with Anthropic.
-
-Reload the shell:
-
-```bash
-source ~/.bashrc
-```
-
-or
-
-```bash
-source ~/.zshrc
-```
 
 ---
 
@@ -216,6 +205,9 @@ claude
 ```
 
 If everything is configured correctly, Claude Code will now route requests through OpenRouter.
+
+<img width="1918" height="486" alt="image" src="https://github.com/user-attachments/assets/a0aa76c7-d0b7-4b04-a309-b8c2bd695eb7" />
+
 
 ---
 
@@ -234,6 +226,8 @@ You should see information about:
 * Provider configuration
 
 If OpenRouter is configured correctly, it will appear in the endpoint.
+
+<img width="1918" height="923" alt="image" src="https://github.com/user-attachments/assets/958b6f8e-7b3e-48eb-802d-5b99565b02ef" />
 
 ---
 
@@ -422,7 +416,7 @@ claude --version
 npm install -g @anthropic-ai/claude-code@latest
 
 
-5. Test If API Key Works (Important)
+5. Test If Openrouter API Key Works (Important)
 
 curl https://openrouter.ai/api/v1/models -H "Authorization: Bearer sk-or-v1-***************"
 
