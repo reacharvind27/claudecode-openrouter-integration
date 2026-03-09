@@ -159,10 +159,8 @@ https://openrouter.ai
 
 3. Navigate to the dashboard.
 
-4. Generate a **new API key**.
-
-Save this key securely.
-
+4. Generate a **new API key**. Save this key securely.
+5. Add Openrouter credits for $10.
 ---
 
 # Step 3 — Configure Environment Variables
